@@ -16,7 +16,7 @@ public class RestaurantOrder {
         System.out.println("5. Exit");
 //        create variables for each item
         int userChoice = mySystem.nextInt();
-        int burger, fries, soda, iceCream;
+        int burger, fries, soda, iceCream, quantity, totalAmount;
 
 //        if statement for inputs 1-4
     if (userChoice >= 1 && userChoice <= 4) {
@@ -26,35 +26,35 @@ public class RestaurantOrder {
 //            quantity and total amount variables are created to take user input and calculate the total item price
             case 1:
                 System.out.print("Enter the quantity: ");
-                int quantityB = mySystem.nextInt();
+                quantity = mySystem.nextInt();
                 System.out.println("You ordered Burgers.");
                 burger = 100;
-                int totalAmountB = quantityB * burger;
-                System.out.println("Total amount: " + totalAmountB + " PHP");
+                totalAmount = quantity * burger;
+                System.out.println("Total amount: " + totalAmount + " PHP");
                 break;
             case 2:
                 System.out.print("Enter the quantity: ");
-                int quantityF = mySystem.nextInt();
+                quantity = mySystem.nextInt();
                 System.out.println("You ordered Fries.");
                 fries = 50;
-                int totalAmountF = quantityF * fries;
-                System.out.println("Total amount: " + totalAmountF + " PHP");
+                totalAmount = quantity * fries;
+                System.out.println("Total amount: " + totalAmount + " PHP");
                 break;
             case 3:
                 System.out.print("Enter the quantity: ");
-                int quantityS = mySystem.nextInt();
+                quantity = mySystem.nextInt();
                 System.out.println("You ordered Soda.");
                 soda = 30;
-                int totalAmountS = quantityS * soda;
-                System.out.println("Total amount: " + totalAmountS + " PHP");
+                totalAmount = quantity * soda;
+                System.out.println("Total amount: " + totalAmount + " PHP");
                 break;
             case 4:
                 System.out.print("Enter the quantity: ");
-                int quantityI = mySystem.nextInt();
+                quantity = mySystem.nextInt();
                 System.out.println("You ordered Ice Cream.");
                 iceCream = 50;
-                int totalAmountI = quantityI * iceCream;
-                System.out.println("Total amount: " + totalAmountI + " PHP");
+                totalAmount = quantity * iceCream;
+                System.out.println("Total amount: " + totalAmount + " PHP");
                 break;
 //                case 5 which uses the break function to exit the program
             case 5:
