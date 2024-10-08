@@ -64,5 +64,8 @@ public class RestaurantOrder {
                 System.out.println("Please enter a valid input");
             }
         }
+        
+        mySystem.close();
+        
     }
 }
