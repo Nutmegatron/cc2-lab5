@@ -18,8 +18,6 @@ public class RestaurantOrder {
         int userChoice = mySystem.nextInt();
         int burger, fries, soda, iceCream, quantity, totalAmount;
 
-//        if statement for inputs 1-4
-    if (userChoice >= 1 && userChoice <= 4) {
 //        switch statement for each individual item
         switch (userChoice) {
 
@@ -63,7 +61,7 @@ public class RestaurantOrder {
             default:
                 System.out.println("Please enter a valid input");
             }
-        }
+        
         
         mySystem.close();
         
