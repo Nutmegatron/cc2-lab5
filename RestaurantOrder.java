@@ -54,9 +54,6 @@ public class RestaurantOrder {
                 totalAmount = quantity * iceCream;
                 System.out.println("Total amount: " + totalAmount + " PHP");
                 break;
-//                case 5 which uses the break function to exit the program
-            case 5:
-                break;
 //                default statement to tell user to input a valid number
             default:
                 System.out.println("Please enter a valid input");
